@@ -1,0 +1,17 @@
+body{
+    color:white;
+    background-color: rgb(3, 2, 20);
+}
+.section{
+    text-align: center;
+    height:95vh;
+}
+.section-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+}
+.red{
+    color:red;
+}
