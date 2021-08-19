@@ -94,7 +94,7 @@
 .contact-box{
     width:80%;
     height:80%;
-    border: solid white 1px;
+    border: solid black 1px;
     box-shadow: 10px 10px 5px rgb(38, 30, 48);
 }
 
@@ -117,7 +117,7 @@
     position: fixed;
     bottom:0;
     right:0;
-    background-color: black;
+    background-color: rgb(19, 0, 189);
     padding:10px;
 
 }
