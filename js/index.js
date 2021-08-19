@@ -9,6 +9,12 @@ $(function() {
 });
 
 $(document).ready(function() {
+  //hiding asset cotent to reveal on click
+  $("#valorant").hide();
+  $("#cc").hide();
+  $("#bgmi").hide();
+
+  //fading animations
   $(window).scroll( function(){
       $('.fadein').each( function(i){
           
@@ -39,3 +45,8 @@ $(document).ready(function() {
       }); 
   });
 }); 
+
+$(".asset-link-container").click(function(){
+  $("#assets-content").hide();
+  $("#"+$(this).attr("data-link")).show();
+});
