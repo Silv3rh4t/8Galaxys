@@ -1,13 +1,3 @@
-$(function () {
-  $('a.page-scroll').bind('click', function (event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
-    }, 1500, 'easeInOutExpo');
-    event.preventDefault();
-  });
-});
-
 $(document).ready(function () {
   //hiding asset cotent to reveal on click
   $("#valorant").hide();
@@ -48,6 +38,7 @@ $(document).ready(function () {
 });
 
 $(".asset-link-container").click(function () {
+  $(".asset-group").hide();
   $("#assets-content").hide();
   $("#assets").css("height", "150vh");
   $("#" + $(this).attr("data-link")).show();

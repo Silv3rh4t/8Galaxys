@@ -16,10 +16,7 @@
     bottom: 0;
     display: block;
 }
-.video-overlay {
-    
-    pointer-events: none; /* Allows right clicking on the video to pause etc */
-}
+
 .video-bg video {
     min-width: 100%;
     min-height: 100%;
