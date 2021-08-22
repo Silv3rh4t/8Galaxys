@@ -13,6 +13,7 @@ $(document).ready(function () {
   $("#valorant").hide();
   $("#cc").hide();
   $("#bgmi").hide();
+  $("#back-wrapper").hide();
 
   //fading animations
   $(window).scroll(function () {
@@ -48,5 +49,14 @@ $(document).ready(function () {
 
 $(".asset-link-container").click(function () {
   $("#assets-content").hide();
+  $("#assets").css("height", "150vh");
   $("#" + $(this).attr("data-link")).show();
+  $("#back-wrapper").show();
+});
+
+$("#back-wrapper").click(function(){
+  $(".asset-group").hide();
+  $("#assets").css("height", "100vh");
+  $("#assets-content").show();
+  $("#back-wrapper").hide();
 });

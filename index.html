@@ -23,42 +23,49 @@
 </head>
 
 <body>
-    
+
     <div class="header">
-        
+
+        <div class="video-bg">
+            <video loop autoplay muted src="video/bg.webm" poster="img/bg.jpg">
+            </video>
+        </div>
         <div class="video-overlay">
             <div class="header-content">
-                <div class="intro">
-                    <div class="brand">
+                <div class="intro row">
+                    <div class="brand col-2">
                         <img height="50px" src="img/logo.png" class="m-3" alt="">
                         <!--<span class="intro-text">SEE THE EIGHT GALAXYS, <span class="red">FEEL THIS SHINE</span> </span>-->
                     </div>
-                </div>
-                <div class="link-bar">
-                    <div class="socials">
-                        <a href="#"><i class="fab fa-discord mx-2"></i></a>
-                        <a href="#"><i class="fa fa-instagram mx-2"></i></a>
-                        <a href="#"><i class="fa fa-envelope-o mx-2"></i></a>
-                    </div>
-                    <div class="navbar">
+                    <div class="navbar col-7">
                         <span class="nav-item mx-2"><a href="#about" class="page-scroll">About Us</a></span>
-                        <span class="nav-item mx-2"><a href="#assets" class="page-scroll">Assets</a></span>
-                        <span class="nav-item mx-2 contact-button"><a href="#contact" class="page-scroll">Contact</a></span>
+                        <span class="nav-item mx-2"><a href="#assets" class="page-scroll asset-link-container"
+                                data-link="valorant">Valorant Team</a></span>
+                        <span class="nav-item mx-2"><a href="#assets" class="page-scroll asset-link-container"
+                                data-link="bgmi">BGMI Team</a></span>
+                        <span class="nav-item mx-2"><a href="#assets" class="page-scroll asset-link-container"
+                                data-link="cc">Content Creators & Influencers</a></span>
+                        <span class="nav-item mx-2"><a href="#contact" class="page-scroll">Contact</a></span>
+                    </div>
+                    <div class="socials col-3">
+                        <a href="https://discord.gg/k64M4srtYr"><i class="fab fa-discord mx-2"></i></a>
+                        <a href="https://www.youtube.com/channel/UCVsMfzp3d0GPw88SE63ai1g/videos"><i class="fa fa-youtube mx-2"></i></a>
+                        <a href="https://www.instagram.com/8galaxys.gg/"><i class="fa fa-instagram mx-2"></i></a>
+                        <a href="https://www.reddit.com/r/8GalaXys/"><i class="fa fa-reddit mx-2"></i></a>
+                        <a href="mailto:8gx.contact@gmail.com"><i class="fa fa-envelope-o mx-2"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="video-bg">
-                <video loop autoplay muted src="video/bg.webm" poster="img/bg.jpg">
-                </video>
             </div>
         </div>
+
     </div>
 
     <div class="container section" id="about">
         <h3 class="display-3 section-head">ABOUT <span class="red">8GalaXys</span></h3>
 
         <div class="section-content about-text fadein">
-            8GalaXys also known as 8Gx, Is an Indian based esports organization with International members. 8GalaXys's mission is to build an eSports platform and to support the communities of our athletes and creators.
+            8GalaXys also known as 8Gx, Is an Indian based esports organization with International members. 8GalaXys's
+            mission is to build an eSports platform and to support the communities of our athletes and creators.
         </div>
     </div>
 
@@ -66,21 +73,25 @@
     <div class="container section" id="assets">
         <h3 class="display-3 section-head"><span class="red">8GalaXys</span> Assets</h3>
 
+        <div id="back-wrapper">
+            <i class="fa fa-arrow-left"></i>
+        </div>
+
         <div class="section-content fadein" id="assets-content">
             <div class="asset-link-container" data-link="valorant">
-                <img src="https://via.placeholder.com/200" class="img-responsive" alt="">
+                <img src="img/valorant-logo.jpg" width="200" class="img-responsive" alt="">
                 <div class="asset-link-text">
                     Valorant
                 </div>
             </div>
             <div class="asset-link-container" data-link="cc">
-                <img src="https://via.placeholder.com/200" class="img-responsive" alt="">
+                <img src="img/CC.jpg" width="200" class="img-responsive" alt="">
                 <div class="asset-link-text">
                     Content Creators
                 </div>
             </div>
             <div class="asset-link-container" data-link="bgmi">
-                <img src="https://via.placeholder.com/200" class="img-responsive" alt="">
+                <img src="img/OIP.jfif" width="200" class="img-responsive" alt="">
                 <div class="asset-link-text">
                     BGMI Lineup
                 </div>
@@ -92,47 +103,363 @@
                 Valorant Team
             </div>
 
-            <div class="asset-wrapper">
-                <div class="asset-image">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle" alt="">
-                </div>
-                <div class="asset-text-wrapper">
-                    <div class="asset-text mt-5 mx-3">
-                        <span class="asset-name">
-                            Raghav Gamer YT
-                        </span><br>
-                        <span class="asset-designation">
-                            Leader
-                        </span>
-                    </div>
-                </div>   
-            </div>
+            <div class="row">
+                <div class="col-6">
 
-            <div class="asset-wrapper">
-                <div class="asset-image">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle" alt="">
-                </div>
-                <div class="asset-text-wrapper">
-                    <div class="asset-text mt-5 mx-3">
-                        <span class="asset-name">
-                            Blade
-                        </span><br>
-                        <span class="asset-designation">
-                            Leader
-                        </span>
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/xtinct.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Xtinct
+                                </span><br>
+                                <span class="asset-designation">
+                                    Team Coach
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </div>   
-            </div>
 
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/mochomocho.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx MochoMocho
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/aninix.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Aninix
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6">
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/Kirito.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Kirito
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/Nightmare.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Nightmare
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/brave.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Brave
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <div id="cc" class="asset-group">
-            dfsdfs
+            <div class="asset-group-heading">
+                Content Creators and Influencers
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/art3mis.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Art3mis
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/bemu.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Bemu Gaming
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/desmain.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Desmain Plays
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/drac.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Drac Gaming
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-6">
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/dude.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    DudeIzLive
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/waffles.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Waffles
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/jassi.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    Jassi Pajji
+                                </span><br>
+                                <span class="asset-designation">
+                                    Content Creator
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
         </div>
+
         <div id="bgmi" class="asset-group">
-            grw
+            <div class="asset-group-heading">
+                Battle Grounds Mobile India Team
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/beerus.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Beerus
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/DEVA.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Destroyer
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/ISHITVA.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Demon
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-6">
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/MAGMA.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx MAGMA
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/psyche.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx Psyche
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="asset-wrapper">
+                        <div class="asset-image">
+                            <img src="img/assets/mAFIA.jpg" width="150" class="rounded-circle" alt="">
+                        </div>
+                        <div class="asset-text-wrapper">
+                            <div class="asset-text mt-5 mx-3">
+                                <span class="asset-name">
+                                    8Gx mAFIA
+                                </span><br>
+                                <span class="asset-designation">
+                                    Player
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        
+
     </div>
 
 
@@ -142,34 +469,66 @@
         </div>
     </div>-->
 
-    <div class="container-fluid section" id="contact">
-        <div class="contact-box">
-            <h3 class="display-3 section-head mt-3"><span class="red">CONTACT</span> US </h3>
-            We'd love to hear from you, say hello via any of our social media handles or email address.
-            <div class="contact-container mt-5">
-                <div class="contact">
-                    <div class="social-btns mb-2">
-                        <a class="btn btn-light btn-rounded mx-4" role="button" href="#"><i class="big fab fa-discord"></i></a>
-                        <a class="btn btn-light btn-rounded mx-4" role="button" href="#"><i class="big fa fa-facebook"></i></a>
-                        <a class="btn btn-light btn-rounded mx-4" role="button" href="#"><i class="big fa fa-instagram"></i></a>
-                        <a class="btn btn-light btn-rounded mx-4" role="button" href="#"><i class="big fa fa-twitter"></i></a>
-                    </div>
-                    <div class="mail-container">
-                        <a href="mailto:hello@8galaxys.in">
-                            <div class="mail-button">
-                              hello@8galaxys.in
+ 
+
+    <footer class="py-2 mt-5 container-fluid text-white text-center bg-dark">
+
+        <div class="section" id="contact">
+            <div class="contact-box">
+                <h3 class="display-3 section-head mt-3"><span class="red">CONTACT</span> US </h3>
+                We'd love to hear from you, say hello via any of our social media handles or email address.
+                <div class="contact-container mt-5">
+                    <div class="contact">
+                        
+                        <a href="https://discord.gg/k64M4srtYr">
+                            <div class="social-button">
+                                <i class="fab fa-discord sb"></i>|8GalaXys
                             </div>
                         </a>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </div>
+                        <a href="https://www.youtube.com/channel/UCVsMfzp3d0GPw88SE63ai1g/videos">
+                            <div class="social-button">
+                                <i class="fa fa-youtube sb"></i>|8GalaXys
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/8GalaXys/">
+                            <div class="social-button">
+                                <i class="fa fa-reddit sb"></i>|8GalaXys
+                            </div>
+                        </a>
+                        <br>
+                        <a href="https://www.instagram.com/8galaxys.gg/">
+                            <div class="social-button">
+                                <i class="fab fa-instagram sb"></i>|8GalaXys
+                            </div>
+                        </a>
 
-    <footer class="py-2 mt-5 container text-center">
-        <lead>Made with <i class="fa fa-heart red"></i> by <a href="http://silv3rh4t.github.io">Akhand Yaduvanshi</a></lead>
+                        <a href="https://twitter.com/8GalaXys?ltclid=2e3f0612-d8f3-4f76-85af-5ecbdb7cc2d3">
+                            <div class="social-button">
+                                <i class="fa fa-twitter sb"></i>|8GalaXys
+                            </div>
+                        </a>
+
+                        <a href="https://www.facebook.com/eightgalaxys.esports/?ltclid=6901bd88-00e7-42e7-b52b-093d26ea5c85">
+                            <div class="social-button">
+                                <i class="fa fa-facebook sb"></i>|8GalaXys
+                            </div>
+                        </a>
+
+                        <!--<div class="mail-container">
+                            <a href="mailto:hello@8galaxys.in">
+                                <div class="mail-button">
+                                    hello@8galaxys.in
+                                </div>
+                            </a>
+                        </div>-->
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+        <div class="madeby">Made with <i class="fa fa-heart red"></i> by <a href="http://silv3rh4t.github.io">Akhand Yaduvanshi</a>
+        </div>
     </footer>
 
 
@@ -178,21 +537,22 @@
     </div>
     <div class="modal fade" id="donateBox" tabindex="-1" aria-labelledby="donateBoxLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="donateBoxLabel">Donate to Us</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="donateBoxLabel">Donate to Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Donation Methods
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
-            <div class="modal-body">
-              Donation Methods
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 </body>
 <script src="js/index.js"></script>
+
 </html>

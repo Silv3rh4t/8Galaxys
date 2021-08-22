@@ -7,60 +7,50 @@
     height: 100vh;
 }
 
-.video-overlay{
-    background-color:black;
+.video-bg,
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
 }
-.video-bg{
-    width:100%;
+.video-overlay {
+    
+    pointer-events: none; /* Allows right clicking on the video to pause etc */
 }
-video{
-    width:100%;
-}
-
-.header-content{
-    display:flex;
-    justify-content: space-around;
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .brand{
     font-size: 1.5em;
 }
-
-.link-bar{
-    width:50%;
-    margin-top:10px;
-    padding-right: 10px;
+.navbar{
+    font-size:1.2rem;
+    font-weight:400;
 }
 .socials{
     font-size: 1.5em;
     display: flex;
     justify-content: flex-end;
 }
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-}
+
 a.page-scroll{
     color:white;
     text-decoration-line: none;
 }
 
-.contact-button{
-    border-radius: 1.5em;
-    background-color: red;
-    padding:10px;
-}
-
-
-.intro{
-    width: 50%;
-    padding-left:20px;
-    padding-top:20px;
-    color:white;
-}
-
 #about{
-    margin-top:250px;
+    margin-top:150px;
 }
 .about-text{
     font-family: 'Orbitron';
@@ -70,6 +60,15 @@ a.page-scroll{
     font-weight: 100;
 }
 
+
+#back-wrapper{
+    font-size:2rem;
+    position:absolute;
+    top: 10;
+    left: 10;
+    cursor: pointer;
+    display: none;
+}
 .asset-link-container{
     cursor: pointer;
 }
@@ -85,16 +84,35 @@ a.page-scroll{
     justify-content: center;
     align-items: center;
 }
-.contact-box{
-    width:80%;
-    height:80%;
-    border: solid black 1px;
-    box-shadow: 10px 10px 5px rgb(38, 30, 48);
-    background-color: honeydew;
-}
 
 .big{
     font-size:1.5rem;
+}
+i.sb{
+    color:white;
+}
+.social-button{
+    border: solid 2px #43288d;
+    border-radius: 10px;
+    padding:10px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #43288d;
+    text-decoration-line: none;
+    margin:10px;
+}
+.social-button:hover{
+    border: solid 2px #43288d;
+    background-color: #43288d;
+    border-radius: 10px;
+    padding:10px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-decoration-line: none;
+    margin:10px;
 }
 .mail-button{
     border: solid 2px #8D2828;
@@ -106,7 +124,17 @@ a.page-scroll{
     color: #8D2828;
     text-decoration-line: none;
 }
-
+.mail-button:hover{
+    border: solid 2px #8D2828;
+    background-color: #8D2828;
+    border-radius: 10px;
+    padding:10px;
+    display: inline-block;
+    font-size: 2.5rem;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-decoration-line: none;
+}
 
 .donate{
     position: fixed;
