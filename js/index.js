@@ -37,7 +37,7 @@ $(document).ready(function() {
               });
               $(this).removeClass("slideLeft");
             }else{
-              $(this).animate({'opacity':'1'},1000);
+              $(this).animate({'opacity':'1'},800);
             }
             
           }

@@ -1,32 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap');
 @import url(theme.css);
+@import url(assets.css);
 
 .header{
     height: 100vh;
 }
 
-.video-bg,
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
+.video-overlay{
+    background-color:black;
 }
-.video-overlay {
-    
-    pointer-events: none; /* Allows right clicking on the video to pause etc */
+.video-bg{
+    width:100%;
 }
-.video-bg video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+video{
+    width:100%;
 }
 
 .header-content{
@@ -52,6 +39,10 @@
     display: flex;
     justify-content: flex-end;
 }
+a.page-scroll{
+    color:white;
+    text-decoration-line: none;
+}
 
 .contact-button{
     border-radius: 1.5em;
@@ -64,10 +55,11 @@
     width: 50%;
     padding-left:20px;
     padding-top:20px;
+    color:white;
 }
 
 #about{
-    margin-top:100px;
+    margin-top:250px;
 }
 .about-text{
     font-size: 1.3rem;
@@ -117,7 +109,8 @@
     position: fixed;
     bottom:0;
     right:0;
-    background-color: rgb(19, 0, 189);
+    background-color: rgb(44, 30, 173);
+    color:white;
     padding:10px;
-
+    cursor: pointer;
 }

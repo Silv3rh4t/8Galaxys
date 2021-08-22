@@ -1,0 +1,27 @@
+.asset-group{
+    text-align: left;
+}
+.asset-group-heading{
+    font-size:2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin:20px;
+}
+.asset-wrapper{
+    display: flex;
+    margin-bottom: 25px;
+}
+.asset-image{
+    width:150px;
+}
+.asset-name{
+    font-size: 1.5rem;
+    font-weight:500;
+    font-style: italic;
+}
+.asset-designation{
+    font-size:1rem;
+    color: grey;
+    font-weight:400;
+    letter-spacing: 1.25pt;
+}
