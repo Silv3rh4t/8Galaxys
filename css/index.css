@@ -142,3 +142,8 @@ i.sb{
     padding:10px;
     cursor: pointer;
 }
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
